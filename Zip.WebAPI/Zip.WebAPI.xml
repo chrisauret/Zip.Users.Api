@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zip.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:Zip.WebAPI.Controllers.AccountsController">
+            <summary>
+            Endpoints for account management.
+            </summary>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.AccountsController.#ctor(Zip.Application.Contracts.IAccountService)">
+            <summary>
+            Creates a new instance of the <see cref="T:Zip.WebAPI.Controllers.AccountsController"/> class.
+            </summary>
+            <param name="accountService">Implementation of account service.</param>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.AccountsController.Get(System.Guid)">
+            <summary>
+            Retrieve an account by ID.
+            </summary>
+            <param name="id">The account ID to search for.</param>
+            <returns>An account object.</returns>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.AccountsController.Create(Zip.Domain.Entities.Account)">
+            <summary>
+            Create an account.
+            </summary>
+            <param name="createAccountRequest">The account to be created.</param>
+            <returns>An account object.</returns>
+        </member>
+        <member name="T:Zip.WebAPI.Controllers.UsersController">
+            <summary>
+            Endpoints for user management.
+            </summary>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.UsersController.#ctor(Zip.Application.Contracts.IUserService)">
+            <summary>
+            Creates a new instance of the <see cref="T:Zip.WebAPI.Controllers.UsersController"/> class.
+            </summary>
+            <param name="userService">Implementation of user service.</param>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.UsersController.Get">
+            <summary>
+            Retrieve all users.
+            </summary>
+            <returns>A list of user objects.</returns>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.UsersController.Get(System.Guid)">
+            <summary>
+            Retrieve a user by ID.
+            </summary>
+            <param name="id">The user ID to search for.</param>
+            <returns>A user object.</returns>
+        </member>
+        <member name="M:Zip.WebAPI.Controllers.UsersController.Post(Zip.Domain.Entities.User)">
+            <summary>
+            Create a user.
+            </summary>
+            <param name="user">The user to be created.</param>
+            <returns>A user object.</returns>
+        </member>
+        <member name="T:Zip.WebAPI.Middleware.ExceptionHandlingMiddleware">
+            <summary>
+            Handle and log global exceptions.
+            </summary>
+        </member>
+    </members>
+</doc>
